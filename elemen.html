@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bunga</title>
+  <style>
+    .bunga {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #2fdc35;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .kelopak {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #100909;
+      position: absolute;
+      top: 25%;
+      left: 25%;
+    }
+
+    .kelopak::before,
+    .kelopak::after {
+      content: "";
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: #941919;
+      position: absolute;
+    }
+
+    .kelopak::before {
+      top: 0;
+      left: 0;
+    }
+
+    .kelopak::after {
+      top: 0;
+      right: 0;
+    }
+
+    .putik {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="bunga">
+    <div class="kelopak"></div>
+    <div class="kelopak"></div>
+    <div class="kelopak"></div>
+    <div class="kelopak"></div>
+    <div class="kelopak"></div>
+    <div class="putik"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,236 @@
+:root {
+    --pink: #f14e95;
+    --bg: #4f6d18;
+    --shadow: 0 2px 2px rgba( 0 0 0 0.5);
+    --ireng: black;
+    ---trans: rgba(0 0 0 )
+}
+
+.body {
+    font-size: 1.2rem;
+    font-family: "Parisienne", cursive;
+    min-height: 200px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(foto/kned.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: grayscale();
+}
+
+.hero {
+    position: relative;
+    min-height: 115vh;
+}
+
+.hero h1, .hero h4, .hero p, .hero h2 {
+    text-shadow: var(--shadow);
+}
+
+.hero h1 {
+    font-family:  "Great Vibes", cursive;
+    font-size: 80px;
+   
+}
+
+.hero p{
+    font-size: 20px;
+    font-family: "Slabo 27px", serif;
+}
+
+.hero h4{
+    font-size: 20px;
+    font-family: "Slabo 27px", serif;
+    color: var(--pink);
+    
+}
+
+.hero h2, .story h2, .prewed h2 {
+    font-family: "Sacramento", cursive;
+    font-size: 75px;
+}
+
+.hero a {
+    color: var(--ireng);
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+.navbar{
+    background-color: rgba( 255 255 255 0.5) !important;
+    backdrop-filter: blur(4px);
+}
+.hero a:hover {
+    background-color: var(--pink);
+    color: white;
+}
+.navbar-brand{
+    color: white;
+}
+.navbar .navbar-brand, .navbar .offcanvas-title {
+    font-size: 2rem;
+}
+.navbar .nav-link {
+    width: 500;
+    font-size: 1.5rem;
+    color: white;
+}
+.offcanvas-body {
+    
+}
+.offcanvas {
+    height: 100vh;
+}
+
+
+.home {
+    background-image: url(foto/pngtree-beautiful-floral-pattern-design-png-image_5895517.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -4.7rem;
+    padding-top: 10rem;
+    color: white;
+}
+
+.home h2 {
+    color: White;
+    font-family: "Sacramento";
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: -3rem;
+}
+
+.home h4 {
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-bottom: 1rem;
+}
+
+.home .couple {
+    margin-top: 100px;
+}
+
+.home .couple h3 {
+    font-family: "Sacramento";
+    font-size: 40px;
+}
+
+.home .couple img {
+    width: 100%;
+}
+
+.info {
+    background-color: var(--ireng);
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    min-height  : 100vh;
+} 
+
+.info h2 {
+    font-family: "sacramento";
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: -5.5rem;
+}
+
+.info .card {
+    background-color: rgba(255, 255, 255,  0.2) !important;
+    color: white !important;
+    border: 1px solid #999;
+}
+
+.info .card-header {
+    border-bottom: 1px solid #999;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+    font-size: 1rem;
+}
+
+.info .card-footer {
+    border-top: 1px solid #999;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.prewed {
+    min-height: 100vh;
+    background-color: #b6b4b4;
+}
+
+.prewed h2 {
+    margin-top: 4rem;
+}
+
+
+
+
+
+
+/* Media Query */
+
+/* LAptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* tablet */
+@media (max-width: 992px) {
+        html {
+            font-size: 65%;
+        }
+
+        .navbar .nav-link {
+            font-size: 25px;
+            color: white;
+          
+        
+        }
+            .offcanvas-title {
+            color: white;      
+                
+        }
+
+        .navbar-toggler {
+            color: transparent;
+        }
+
+        .navbar-toggler-icon {
+            background-color:;
+        }
+
+        .offcanvas{
+            backdrop-filter: blur(4px);
+        }
+
+        /* .home h2 {
+    color: White;
+    font-family: "Sacramento";
+    font-size: 50px;
+    font-weight: bold;
+     margin-top: -3rem;
+    padding-top: 15rem;
+} */
+
+        
+}
+
+/* hp */
+@media (max-width: 992px) {
+    html {
+        font-size: 60%;
+    }
+}
+
